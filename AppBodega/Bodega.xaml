@@ -1,0 +1,22 @@
+﻿<mah:MetroWindow x:Class="AppBodega.Bodega"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:AppBodega"
+        mc:Ignorable="d"
+        Title="Bodega" Height="715" Width="1065" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
+    <Grid Margin="0,0,2,1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnListado" Content="  Listado de Stock &#xD;&#xA;Solicitud de Insumos&#xD;&#xA;" HorizontalAlignment="Left" Margin="61,182,0,0" VerticalAlignment="Top" Width="349" Height="149" Click="btnListado_Click"/>
+        <Button x:Name="btnEnvio" Content="Envío de Stock a Cocina" HorizontalAlignment="Left" Margin="645,182,0,0" VerticalAlignment="Top" Width="295" Height="149" RenderTransformOrigin="0.86,1.329" Click="btnEnvio_Click"/>
+        <Label x:Name="lblBodega" Content="Bodega" HorizontalAlignment="Left" Margin="471,41,0,0" VerticalAlignment="Top" Height="64" Width="134" FontSize="36"/>
+        <Button x:Name="btnCerrarSesion" Content="Cerrar sesión" HorizontalAlignment="Left" Height="43" Margin="70,600,-230,0" VerticalAlignment="Top" Width="160" Click="btnCerrarSesion_Click" Grid.Column="1"/>
+        <Label x:Name="lblUser" Content="" HorizontalAlignment="Left" Margin="25,41,0,0" VerticalAlignment="Top" Loaded="lblUser_Loaded" Width="385" Height="26"/>
+        <Button x:Name="btn_act_ins" Content="Actualizacion Insumo" HorizontalAlignment="Left" Margin="61,380,0,0" VerticalAlignment="Top" Width="349" Height="149" Click="Btn_act_ins_Click"/>
+    </Grid>
+</mah:MetroWindow>

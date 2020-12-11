@@ -1,0 +1,20 @@
+﻿<mah:MetroWindow x:Class="AppBodega.LoginBodega"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppBodega"
+        mc:Ignorable="d"                 
+        Title="Login Bodega" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="ThreeDBorderWindow">
+    <Grid>
+        <Label x:Name="lblUsuario" Content="Nombre de usuario" HorizontalAlignment="Left" Height="27" Margin="134,131,0,0" VerticalAlignment="Top" Width="131" Background="White" Foreground="#FF040000"/>
+        <Label x:Name="lblContraseña" Content="Contraseña" HorizontalAlignment="Left" Height="27" Margin="134,180,0,0" VerticalAlignment="Top" Width="111" Background="White"/>
+        <Label x:Name="lblBodega" Content="Bodega" HorizontalAlignment="Left" Height="65" Margin="365,25,0,0" VerticalAlignment="Top" Width="135" FontSize="36" Background="White" Foreground="Black"/>
+        <Label x:Name="lblAdvertencia" Content="¿Olvido su Constraseña?" HorizontalAlignment="Left" Height="31" Margin="365,260,0,0" VerticalAlignment="Top" Width="120" FontSize="10" Background="White"/>
+        <Button x:Name="btnAceptar" Content="Ingresar" HorizontalAlignment="Left" Height="50" Margin="339,325,0,0" VerticalAlignment="Top" Width="201" FontSize="14" Click="btnAceptar_Click"/>
+        <TextBox x:Name="txtUsuario" HorizontalAlignment="Left" Height="27" Margin="320,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="224"/>
+        <PasswordBox x:Name="pbContrasena" HorizontalAlignment="Left" Margin="320,180,0,0" VerticalAlignment="Top" Width="224" Height="27"/>
+
+    </Grid>
+</mah:MetroWindow>

@@ -1,0 +1,33 @@
+﻿<mah:MetroWindow x:Class="AppBodega.AbastecimientodeCocina"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:AppBodega"
+        mc:Ignorable="d"
+        Title="Abastecimiento de Cocina" Height="703.17" Width="1041.415" WindowStartupLocation="CenterScreen" Loaded="MetroWindow_Loaded">
+    <Grid>
+        <Label x:Name="lblAbastecimientoDeCocina" Content="Abastecimiento de Cocina" HorizontalAlignment="Left" Height="69" Margin="301,19,0,0" VerticalAlignment="Top" Width="421" FontSize="36"/>
+        <Label x:Name="lblNombre" Content="Nombre Plato" HorizontalAlignment="Left" Height="31" Margin="60,166,0,0" VerticalAlignment="Top" Width="118"/>
+        <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left" Height="39" Margin="391,160,0,0" VerticalAlignment="Top" Width="156" Click="BtnAgregar_Click"/>
+        <Button x:Name="btnVolver" Content="Volver" HorizontalAlignment="Left" Height="37" Margin="897,589,0,0" VerticalAlignment="Top" Width="100" Click="btnVolver_Click" />
+        <Label x:Name="lblUser" Content="" HorizontalAlignment="Left" Margin="10,19,0,0" VerticalAlignment="Top" Width="130"/>
+        <DataGrid x:Name="dtgPlatosEnviar" IsReadOnly="True" HorizontalAlignment="Left" Height="265" Margin="78,343,0,0" VerticalAlignment="Top" Width="234"/>
+        <DataGrid x:Name="dtgIngredientesDisp" IsReadOnly="True" HorizontalAlignment="Left" Height="254" Margin="746,316,0,0" VerticalAlignment="Top" Width="263"/>
+        <DataGrid x:Name="dtgIngEnviar" IsReadOnly="True" HorizontalAlignment="Left" Height="247" Margin="391,343,0,0" VerticalAlignment="Top" Width="214"/>
+        <Label Content="Ingredientes Disponibles" HorizontalAlignment="Left" Margin="817,281,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.735,0.56"/>
+        <Label Content="Platos Seleccionados" HorizontalAlignment="Left" Margin="78,298,0,0" VerticalAlignment="Top"/>
+        <Label Content="Ingredientes a Reabastecer" HorizontalAlignment="Left" Margin="407,298,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbPlatos" HorizontalAlignment="Left" Margin="183,166,0,0" VerticalAlignment="Top" Width="161" SelectionChanged="CbPlatos_SelectionChanged"/>
+        <TextBox x:Name="txtCantidad" HorizontalAlignment="Left" Height="23" Margin="183,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="161" PreviewTextInput="TxtCantidad_PreviewTextInput" GotFocus="TxtCantidad_GotFocus"/>
+        <Label Content="Cantidad Deseada" HorizontalAlignment="Left" Margin="60,226,0,0" VerticalAlignment="Top" Width="118"/>
+        <DataGrid x:Name="dtgingredientes1plato" HorizontalAlignment="Left" Height="153" Margin="734,114,0,0" VerticalAlignment="Top" Width="275"/>
+        <Label Content="Ingredientes Necesarios para 1 plato" HorizontalAlignment="Left" Margin="773,85,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnEnviar" Content="Enviar a Cocina" HorizontalAlignment="Left" Margin="378,623,0,0" VerticalAlignment="Top" Width="257" Height="40" Click="BtnEnviar_Click"/>
+        <Button Content="Borrar Selecciones" HorizontalAlignment="Left" Margin="78,623,0,0" VerticalAlignment="Top" Width="139" Height="40" Click="Button_Click"/>
+        <Label Content="" x:Name="lb1" HorizontalAlignment="Left" Margin="183,257,0,0" VerticalAlignment="Top" Width="272"/>
+
+
+    </Grid>
+</mah:MetroWindow>
